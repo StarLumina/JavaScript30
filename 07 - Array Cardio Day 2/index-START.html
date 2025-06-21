@@ -28,10 +28,18 @@
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
     // Array.prototype.every() // is everyone 19 or older?
+    const ages=people.map(person=>(2025-person.year))
+    const isAdult=ages.some(ages=>ages>19)
+    const everyoneAdult=ages.every(ages=>ages>19)
+    console.log(isAdult)
+    console.log(everyoneAdult)
+    console.log(ages)
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
+    const userID = comments.find(a=>a.id=823423)
+    console.log(userID)
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
